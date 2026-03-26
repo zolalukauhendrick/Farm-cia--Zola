@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmácia Zola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Farmácia Zola</h1>
+    <button>Sair</button>
+</header>
+
+<main>
+
+    <h2>Produtos</h2>
+
+<div class="produtos">
+
+    <div class="produto">
+        <h3>Paracetamol</h3>
+        <p>Preço: 1500 Kz</p>
+        <button onclick="comprar('Paracetamol', 1500)">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <h3>Vitamina C</h3>
+        <p>Preço: 2000 Kz</p>
+        <button onclick="comprar('Vitamina C', 2000)">Comprar</button>
+    </div>
+
+    <div class="produto">
+        <h3>Álcool Gel</h3>
+        <p>Preço: 1000 Kz</p>
+        <button onclick="comprar('Álcool Gel', 1000)">Comprar</button>
+    </div>
+
+</div>
+
+<hr>
+
+<h2>Carrinho</h2>
+<ul id="carrinhoLista"></ul>
+
+<h3>Total: <span id="total">0</span> Kz</h3>
+
+<button onclick="finalizarCompra()">Finalizar Compra</button>
+</main>
+
+</body>
+</html>
